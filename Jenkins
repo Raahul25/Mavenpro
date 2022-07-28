@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull Repository') {
+            steps {
+                git credentialsId: 'cfd37481-02e0-4bd0-a81d-e516eff982b8', url: 'https://github.com/Raahul25/Mavenpro.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('C:\\Users\\rahul yadav\\Music\\MyFirstProject') {
+                    bat 'mvn clean test'
+                }
+    
+            }
+        }
+    }
+}
