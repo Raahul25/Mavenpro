@@ -8,6 +8,8 @@ public class MyFirstProjectApplication {
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome Vishaal to Apmosys");
+		
+		
 		SpringApplication.run(MyFirstProjectApplication.class, args);
 	
 		
